@@ -29,8 +29,8 @@
 			<input class="col-md-12 form-control" type="text" name="series" id="series">
 		</div>
 		<div class="mb-3">
-			<label for="sale_data">Data di vendita</label>
-			<input class="col-md-12 form-control" type="date" name="sale_data" id="sale_data">
+			<label for="sale_date">Data di vendita</label>
+			<input class="col-md-12 form-control" type="date" name="sale_date" id="sale_date">
 		</div>
 		<div class="mb-3">
 			<label for="type">Tipo di fumetto</label>

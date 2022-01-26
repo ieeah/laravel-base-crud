@@ -17,7 +17,7 @@
 					sales date: {{$comic->sale_date}}
 				</h4>
 				<h5>
-					{{$comic->price}}
+					{{$comic->price}}€
 				</h5>
 			</div>
 		</div>
