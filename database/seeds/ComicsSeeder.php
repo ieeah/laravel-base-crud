@@ -15,7 +15,7 @@ class ComicsSeeder extends Seeder
 	{
 		$comics = config('comics');
 
-		@foreach ($comics as $comic) {
+		foreach ($comics as $comic) {
 			$new_comic = new Comic();
 
 			$new_comic->title = $comic['title'];
@@ -25,7 +25,9 @@ class ComicsSeeder extends Seeder
 			$new_comic->series = $comic['series'];
 			$new_comic->sale_date = $comic['sale_date'];
 			$new_comic->type = $comic['type'];
-			$new_comic->nslug = Str::slug($comic->title, '-');
+			$new_comic->slug = Str::slug($comic['title'], '-');
+
+			$new_comic->save();
 		}
 	}
 }
