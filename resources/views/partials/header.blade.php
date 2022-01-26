@@ -9,7 +9,7 @@
 				<a href="{{ route('comics.index') }}">Comics</a>
 			</li>
 			<li>
-				<a href=""></a>
+				<a href="{{ route('comics.create') }}">Create</a>
 			</li>
 		</ul>
 	</nav>

@@ -5,7 +5,7 @@
 		<h1>{{$comic->title}}</h1>
 		<div class="row">
 			<figure class="w-50">
-				<img class="w-100" src="{{$comic->thumb}}" alt="" class="img-fluid">
+				<img class="w-100" src="{{$comic->thumb}}" alt="{{$comic->title}}" class="img-fluid">
 			</figure>
 			<div class="details w-50">
 				<h3>{{ $comic->series }}</h3>
@@ -21,5 +21,6 @@
 				</h5>
 			</div>
 		</div>
+		<a href="{{ route('comics.index') }}">Back to Archive</a>
 	</div>
 @endsection
