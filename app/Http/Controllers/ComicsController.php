@@ -49,7 +49,12 @@ class ComicsController extends Controller
 	 */
 	public function show($id)
 	{
-		//
+		$comic = Comic::find($id);
+
+		if ($comic) {
+			return view('comics.show', compact('comic'));
+		}
+		abort(404);
 	}
 
 	/**
