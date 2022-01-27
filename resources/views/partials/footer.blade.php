@@ -1,3 +1,5 @@
 <footer>
-	<h1>footer</h1>
+	<div class="container text-center">
+		<p>caprette tibetane comic shop spa</p>
+	</div>
 </footer>

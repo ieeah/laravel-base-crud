@@ -1,0 +1,10 @@
+header {
+  background-color: #e6faff;
+  height: 80px;
+}
+
+.home_main.container img {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

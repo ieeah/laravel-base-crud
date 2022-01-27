@@ -1,7 +1,7 @@
 @extends('layouts.main_layout')
 
 @section('content')
-	<div class="container">
+	<div class="index_main container">
 		<h1>comics page</h1>
 		
 		@if (session('deleted'))
@@ -30,7 +30,7 @@
 			<tr>
 				<td><strong>{{$comic->id}}</strong></td>
 				<td>{{$comic->title}}</td>
-				<td>{{Str::limit( $comic->description , 120, ' ...')}}</td>
+				<td>{{Str::limit( $comic->description , 30, ' ...')}}</td>
 				<td>{{$comic->thumb}}</td>
 				<td>{{$comic->price}}</td>
 				<td>{{$comic->series}}</td>
